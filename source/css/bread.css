@@ -1,0 +1,14 @@
+.bread {
+    font-size: 0.55rem;
+    line-height: 1rem;
+    color: #5d5d5d;
+    margin-top: 0.5rem;
+}
+
+.bread .wrap {
+    padding: 0 0.5rem;
+}
+
+.bread a {
+    color: #5d5d5d;
+}

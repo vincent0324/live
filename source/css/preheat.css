@@ -1,0 +1,65 @@
+.live-hot {
+    padding: 0 0.5rem;
+}
+
+.live-title {
+    line-height: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.live-hot h3 {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.live-hot-content {
+    margin-top: 0.5rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.live-hot-content ul {
+    width: 16.5rem;
+}
+
+.live-hot-item {
+    width: 6.75rem;
+    height: 7rem;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.live-hot-item img {
+    width: 6.75rem;
+    height: 4.5rem;
+}
+
+.live-hot-item h4 {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    color: #323c44;
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+}
+
+.live-hot-item p {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    color: #b9b9b9;
+    font-size: 0.45rem;
+    overflow: hidden;
+}
+
+.preheat-tip {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a9a9a9;
+    font-size: 0.6rem;
+}

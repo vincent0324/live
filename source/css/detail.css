@@ -1,0 +1,75 @@
+.live-detail {
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+}
+
+.live-detail-button {
+    display: block;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    color: #6c7275;
+    font-size: 0.6rem;
+    width: 3.5rem;
+}
+
+.live-detail-button i {
+    font-size: 0.6rem;
+    padding: 0 0.1rem;
+}
+
+.live-detail-participant {
+    height: 1.2rem;
+    overflow: hidden;
+}
+
+.participant-number {
+    line-height: 1.2rem;
+    text-align: right;
+    font-size: 0.6rem;
+    color: #8f8f8f;
+}
+
+.participant-number span {
+    color: #df2228;
+}
+
+.participant-avatar {
+    height: 1.2rem;
+    padding-left: 0.4rem;
+}
+
+.participant-avatar img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.avatar-item {
+    float: right;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.1rem;
+    margin-left: -0.4rem;
+}
+
+.live-detail-time {
+    line-height: 1rem;
+    font-size: 0.45rem;
+    color: #a0a0a0;
+}
+
+.live-detail-text {
+    margin-top: 0.4rem;
+    padding-bottom: 0.2rem;
+}
+
+.live-detail-text p {
+    line-height: 0.75rem;
+    font-size: 0.5rem;
+    color: #373737;
+}

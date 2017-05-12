@@ -1,0 +1,29 @@
+.live-tab {
+    margin-top: 1rem;
+}
+
+.live-tab-button {
+    padding: 0 0.5rem;
+    font-size: 0;
+    text-align: center;
+}
+
+.live-tab-button a {
+    display: inline-block;
+    width: 7.5rem;
+    height: 1.6rem;
+    box-sizing: content-box;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 1.6rem;
+    font-size: 0.65rem;
+    color: #9fa6aa;
+}
+
+.live-tab-button i {
+    font-size: 0.65rem;
+}
+
+.live-tab-button a.current {
+    color: #3595e7;
+    border-bottom-color: #3595e7;
+}

@@ -1,0 +1,56 @@
+.live-item-banner {
+    width: 16rem;
+    position: relative;
+}
+
+.live-item-banner img {
+    width: 16rem;
+}
+
+.live-item-status {
+    height: 1.2rem;
+    border-radius: 0.6rem;
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.05rem solid white;
+    line-height: 1.1rem;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 0.55rem;
+    padding: 0 0.4rem;
+}
+
+.live-item-status i {
+    font-size: 0.5rem;
+    color: #fffc25;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.live-item-status span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+.banner-cover {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 0.7rem;
+}

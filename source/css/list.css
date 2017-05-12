@@ -1,0 +1,45 @@
+.live-item {
+    width: 16rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.live-item-detail {
+    padding: 0.5rem;
+    position: relative;
+}
+
+.live-item-title {
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+    color: #343d40;
+    font-weight: bold;
+    max-width: 10rem;
+}
+
+.live-item-time {
+    line-height: 0.8rem;
+    font-size: 0.45rem;
+    color: #a0a0a0;
+}
+
+.live-item-summary {
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0.4rem 0.5rem;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+    color: #6c7275;
+    margin-top: 0.3rem;
+}
+
+.live-item-participant {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    color: #a0a0a0;
+    font-size: 0.6rem;
+    text-align: right;
+}
