@@ -1,0 +1,19 @@
+.update-button {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: 1px solid #e6e6e6;
+    font-size: 0.55rem;
+    color: #df2228;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    padding: 0 0.4rem 0 0.5rem;
+    background-color: rgba(240, 240, 240, 0.9);
+    position: fixed;
+    bottom: 6rem;
+    right: 0;
+    border-right-width: 0;
+}
+
+.update-button i {
+    font-size: 0.6rem;
+}

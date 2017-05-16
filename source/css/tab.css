@@ -27,3 +27,140 @@
     color: #3595e7;
     border-bottom-color: #3595e7;
 }
+
+.live-stream {
+    width: 15rem;
+    margin: 0 auto;
+    border-left: 2px solid #dbdbdb;
+    padding-left: 0.5rem;
+    margin-top: 1.6rem;
+}
+
+.stream-date {
+    margin-bottom: 1.6rem;
+}
+
+.stream-date header {
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+
+.stream-date header h5 {
+    float: left;
+    padding: 0 0.3rem;
+    background-color: #eee;
+    font-size: 0.5rem;
+    color: #6c7275;
+}
+
+.stream-item-time {
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #3595e7;
+}
+
+.stream-item-publisher {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.5rem;
+    color: #939698;
+}
+
+.stream-item-publisher img {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 3px solid #e7e7e7;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stream-item-publisher i {
+    color: #3595e7;
+    font-style: normal;
+}
+
+.stream-item-text {
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+}
+
+.stream-item-photo {
+    margin-top: 0.4rem;
+    overflow: hidden;
+    width: 14.5rem;
+}
+
+.stream-item-photo img {
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.photo-type-1 {
+    width: 15rem;
+}
+
+.photo-type-1 img {
+    width: 14.5rem;
+}
+
+.stream-item-location {
+    line-height: 0.8rem;
+    color: #bababa;
+    font-size: 0.55rem;
+}
+
+.stream-item-location i {
+    font-size: 0.6rem;
+}
+
+.stream-item {
+    margin-bottom: 0.7rem;
+    position: relative;
+}
+
+.stream-item::before {
+    content: "";
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    border: 0.1rem solid #3595e7;
+    background-color: white;
+    left: -0.77rem;
+    top: 0.35rem;
+}
+
+.photo-type-2 {
+    width: 15rem;
+}
+
+.photo-type-2 img {
+    float: left;
+    width: 7rem;
+    height: 5.25rem;
+    margin-right: 0.5rem;
+}
+
+.photo-type-3 {
+    width: 15rem;
+}
+
+.photo-type-3 img {
+    float: left;
+    width: 4.5rem;
+    height: 3.375rem;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.stream-item-top {
+    width: 2rem;
+    height: 1.7rem;
+    background-image: url(http://i1.dd-img.com/assets/image/1494581560-1ef727ab4e347e8e-80w-68h.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+}

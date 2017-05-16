@@ -1,6 +1,3 @@
-import React from 'react';
-import {render} from 'react-dom';
-
 import './css/common.css';
 import './css/preheat.css';
 import './css/banner.css';

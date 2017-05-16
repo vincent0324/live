@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
 
     entry: {
-        preheat: path.resolve(__dirname, 'source/app-preheat.js')
+        index: path.resolve(__dirname, 'source/app.js')
     },
 
     output: {
