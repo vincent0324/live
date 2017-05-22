@@ -14,5 +14,5 @@ let detail = new Detail();
 // import Tab from './js/Tab';
 // let tab = new Tab();
 
-import Update from './js/Update';
-let update = new Update();
+// import Update from './js/Update';
+// let update = new Update();

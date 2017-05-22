@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
 
     entry: {
-        index: path.resolve(__dirname, 'source/app.js')
+        chat: path.resolve(__dirname, 'source/app.js')
     },
 
     output: {
