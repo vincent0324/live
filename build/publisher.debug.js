@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -186,7 +186,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(16);
+	fixUrls = __webpack_require__(18);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -520,32 +520,44 @@ exports.default = Detail;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+"use strict";
 
-// load the styles
-var content = __webpack_require__(10);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
 
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./banner.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./banner.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(19);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Update = function () {
+    function Update() {
+        _classCallCheck(this, Update);
+
+        this.init();
+    }
+
+    _createClass(Update, [{
+        key: 'init',
+        value: function init() {
+            this.bindEvent();
+        }
+    }, {
+        key: 'bindEvent',
+        value: function bindEvent() {
+            //
+        }
+    }]);
+
+    return Update;
+}();
+
+;
+
+exports.default = Update;
 
 /***/ }),
 /* 4 */
@@ -568,8 +580,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./bread.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./bread.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./banner.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./banner.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -599,8 +611,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./common.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./common.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./bread.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./bread.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -630,8 +642,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./detail.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./detail.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./common.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./common.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -661,8 +673,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./like.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./like.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./detail.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./detail.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -692,8 +704,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./tab.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./tab.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./like.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./like.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -706,39 +718,68 @@ if(false) {
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(16);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./tab.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./tab.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
-__webpack_require__(5);
-
-__webpack_require__(3);
-
 __webpack_require__(6);
 
-__webpack_require__(8);
+__webpack_require__(4);
 
 __webpack_require__(7);
 
-__webpack_require__(4);
+__webpack_require__(9);
+
+__webpack_require__(8);
+
+__webpack_require__(5);
 
 var _Detail = __webpack_require__(2);
 
 var _Detail2 = _interopRequireDefault(_Detail);
 
+var _Update = __webpack_require__(3);
+
+var _Update2 = _interopRequireDefault(_Update);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var detail = new _Detail2.default();
 
-// import Tab from './js/Tab';
-// let tab = new Tab();
-
-// import Update from './js/Update';
-// let update = new Update();
-// import React from 'react';
-// import { render } from 'react-dom';
+var update = new _Update2.default();
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -752,7 +793,7 @@ exports.push([module.i, ".live-item-banner {\n    width: 16rem;\n    position: r
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -766,7 +807,7 @@ exports.push([module.i, ".bread {\n    font-size: 0.55rem;\n    line-height: 1re
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -780,7 +821,7 @@ exports.push([module.i, "html {\n    font-family: sans-serif;\n    text-size-adj
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -794,7 +835,7 @@ exports.push([module.i, ".live-title {\n    line-height: 1rem;\n    padding: 0 0
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -808,7 +849,7 @@ exports.push([module.i, ".live-like {\n    position: fixed;\n    width: 2.8rem;\
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -822,7 +863,21 @@ exports.push([module.i, ".live-tab {\n    margin-top: 1rem;\n}\n\n.live-tab-butt
 
 
 /***/ }),
-/* 16 */
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".update-button {\n    height: 1.5rem;\n    line-height: 1.5rem;\n    border: 1px solid #e6e6e6;\n    font-size: 0.55rem;\n    color: #df2228;\n    border-top-left-radius: 0.75rem;\n    border-bottom-left-radius: 0.75rem;\n    padding: 0 0.4rem 0 0.5rem;\n    background-color: rgba(240, 240, 240, 0.9);\n    position: fixed;\n    bottom: 6rem;\n    right: 0;\n    border-right-width: 0;\n}\n\n.update-button i {\n    font-size: 0.6rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports) {
 
 
@@ -915,6 +970,37 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(17);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./update.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./update.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,100 @@
+.display {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    display: none;
+    z-index: 100000;
+}
+
+.display-single {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    display: none;
+    z-index: 100000;
+}
+
+.display-single .wrap {
+    height: 100%;
+}
+
+.display-single img {
+    display: block;
+    max-width: 16rem;
+}
+
+.display .wrap {
+    height: 100%;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-container {
+    position: relative;
+    width: 16rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.display-wrapper {
+    position: relative;
+}
+
+.display-slide {
+    display: flex;
+    float: left;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-slide img {
+    display: block;
+    max-width: 16rem;
+}
+
+.display-slide-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-slide-1 img {
+    display: block;
+    max-width: 16rem;
+}
+
+.display-pages {
+    position: fixed;
+    bottom: 2.4rem;
+    width: 16rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.display-pages span {
+    font-weight: bold;
+}
+
+.display-pages i {
+    font-style: normal;
+}

@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
 
     entry: {
-        chat: path.resolve(__dirname, 'source/app.js')
+        index: path.resolve(__dirname, 'source/app.js')
     },
 
     output: {
@@ -36,7 +36,8 @@ module.exports = {
             cookie: path.resolve(__dirname, 'source/lib/cookie/cookie'),
             user: path.resolve(__dirname, 'source/lib/user/user'),
             area: path.resolve(__dirname, 'source/lib/area/area'),
-            tip: path.resolve(__dirname, 'source/lib/tip/Tip')
+            tip: path.resolve(__dirname, 'source/lib/tip/Tip'),
+            swiper: path.resolve(__dirname, 'source/lib/swiper/idangerous.swiper.min')
         }
     }
 };

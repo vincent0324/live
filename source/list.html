@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="applicable-device" content="mobile">
     <script src="http://assets.diandong.com/mobile/live/build/flexible.js"></script>
+    <script type="text/javascript" src="http://assets.diandong.com/mobile/js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -74,6 +75,19 @@
     </div>
 
     <script src="http://assets.diandong.com/mobile/live/build/list.debug.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            var docHeight = $(document).height();
+            var winTop = $(document).scrollTop();
+            var winHeight = $(window).height();
+
+            if (docHeight - winTop -winHeight <= 100) {
+                console.log('load');
+                // page.nextPage();
+            }
+        });
+    </script>
 
 </body>
 

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -186,7 +186,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(16);
+	fixUrls = __webpack_require__(7);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -465,127 +465,10 @@ function updateLink(linkElement, options, obj) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Detail = function () {
-    function Detail() {
-        _classCallCheck(this, Detail);
-
-        this.init();
-    }
-
-    _createClass(Detail, [{
-        key: 'init',
-        value: function init() {
-            this.bindEvent();
-        }
-    }, {
-        key: 'bindEvent',
-        value: function bindEvent() {
-            var tabButton = document.getElementById('live-detail-button');
-            var tabContent = document.getElementById('live-detail-text');
-            var tabButtonIcon = tabButton.getElementsByTagName('i')[0];
-
-            tabButton.addEventListener('click', function () {
-                if (tabButton.className === 'live-detail-button') {
-                    tabButton.className = 'live-detail-button on';
-                    tabContent.className = 'live-detail-text';
-                    tabButtonIcon.innerHTML = '&#xe605;';
-                } else {
-                    tabButton.className = 'live-detail-button';
-                    tabContent.className = 'live-detail-text fn-hide';
-                    tabButtonIcon.innerHTML = '&#xe606;';
-                }
-            }, false);
-        }
-    }]);
-
-    return Detail;
-}();
-
-;
-
-exports.default = Detail;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./banner.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./banner.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(11);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./bread.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./bread.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(5);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -610,13 +493,13 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(13);
+var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -630,8 +513,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./detail.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./detail.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./edit.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./edit.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -641,132 +524,18 @@ if(false) {
 }
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(14);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./like.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./like.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(15);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./tab.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./tab.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 9 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(5);
+__webpack_require__(2);
 
 __webpack_require__(3);
 
-__webpack_require__(6);
-
-__webpack_require__(8);
-
-__webpack_require__(7);
-
-__webpack_require__(4);
-
-var _Detail = __webpack_require__(2);
-
-var _Detail2 = _interopRequireDefault(_Detail);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var detail = new _Detail2.default();
-
-// import Tab from './js/Tab';
-// let tab = new Tab();
-
-// import Update from './js/Update';
-// let update = new Update();
-// import React from 'react';
-// import { render } from 'react-dom';
-
 /***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".live-item-banner {\n    width: 16rem;\n    position: relative;\n}\n\n.live-item-banner img {\n    width: 16rem;\n}\n\n.live-item-status {\n    height: 1.2rem;\n    border-radius: 0.6rem;\n    position: absolute;\n    top: 0.7rem;\n    right: 0.7rem;\n    background-color: rgba(0, 0, 0, 0.3);\n    border: 0.05rem solid white;\n    line-height: 1.1rem;\n    overflow: hidden;\n    text-align: center;\n    color: white;\n    font-size: 0.55rem;\n    padding: 0 0.4rem;\n}\n\n.live-item-status i {\n    font-size: 0.5rem;\n    color: #fffc25;\n    display: inline-block;\n    vertical-align: top;\n}\n\n.live-item-status span {\n    display: inline-block;\n    vertical-align: middle;\n    width: 0.3rem;\n    height: 0.3rem;\n    background-color: white;\n    border-radius: 50%;\n    margin-right: 0.3rem;\n}\n\n.banner-cover {\n    display: flex;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    -webkit-align-items: center;\n    align-items: center;\n    justify-content: center;\n    color: white;\n    background-color: rgba(0, 0, 0, 0.35);\n    font-size: 0.7rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".bread {\n    font-size: 0.55rem;\n    line-height: 1rem;\n    color: #5d5d5d;\n    margin-top: 0.5rem;\n}\n\n.bread .wrap {\n    padding: 0 0.5rem;\n}\n\n.bread a {\n    color: #5d5d5d;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 12 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -780,7 +549,7 @@ exports.push([module.i, "html {\n    font-family: sans-serif;\n    text-size-adj
 
 
 /***/ }),
-/* 13 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -788,41 +557,13 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".live-title {\n    line-height: 1rem;\n    padding: 0 0.5rem;\n    font-size: 0.8rem;\n    margin: 0.7rem 0;\n}\n\n.live-detail {\n    width: 15rem;\n    margin: 0 auto;\n    background-color: #eee;\n    border-radius: 3px;\n    padding: 0.2rem 0.5rem;\n}\n\n.live-detail-button {\n    display: block;\n    height: 1.2rem;\n    line-height: 1.2rem;\n    color: #6c7275;\n    font-size: 0.6rem;\n    width: 3.5rem;\n}\n\n.live-detail-button i {\n    font-size: 0.6rem;\n    padding: 0 0.1rem;\n}\n\n.live-detail-participant {\n    height: 1.2rem;\n    overflow: hidden;\n}\n\n.participant-number {\n    line-height: 1.2rem;\n    text-align: right;\n    font-size: 0.6rem;\n    color: #8f8f8f;\n}\n\n.participant-number span {\n    color: #df2228;\n}\n\n.participant-avatar {\n    height: 1.2rem;\n    padding-left: 0.4rem;\n}\n\n.participant-avatar img {\n    width: 1rem;\n    height: 1rem;\n    border-radius: 50%;\n}\n\n.avatar-item {\n    float: right;\n    width: 1.2rem;\n    height: 1.2rem;\n    border-radius: 50%;\n    background-color: white;\n    padding: 0.1rem;\n    margin-left: -0.4rem;\n}\n\n.live-detail-time {\n    line-height: 1rem;\n    font-size: 0.45rem;\n    color: #a0a0a0;\n}\n\n.live-detail-text {\n    margin-top: 0.4rem;\n    padding-bottom: 0.2rem;\n}\n\n.live-detail-text p {\n    line-height: 0.75rem;\n    font-size: 0.5rem;\n    color: #373737;\n}\n", ""]);
+exports.push([module.i, "body {\n    background-color: #eee;\n}\n\n.edit-item {\n    width: 15rem;\n    margin: 0.5rem auto;\n}\n\n.edit-item-header {\n    height: 1.5rem;\n}\n\n.edit-item-header h3 {\n    line-height: 1.5rem;\n    font-size: 0.6rem;\n}\n\n.edit-item-content {\n    background-color: white;\n    padding: 0.5rem;\n    font-size: 0.5rem;\n}\n\n.edit-item-top .edit-item-content {\n    line-height: 1rem;\n}\n\n.edit-item-top .edit-item-content input {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.edit-item-text .edit-item-content textarea {\n    display: block;\n    width: 14rem;\n    height: 2rem;\n    padding: 0.5rem;\n    font-size: 0.5rem;\n    line-height: 0.8rem;\n    border: 1px solid #ddd;\n}\n\n.edit-item-location .edit-item-content input {\n    display: block;\n    width: 14rem;\n    height: 1rem;\n    padding: 0 0.5rem;\n    line-height: 1rem;\n    font-size: 0.5rem;\n    border: 1px solid #ddd;\n}\n\n.edit-item-submit input {\n    width: 15rem;\n    height: 2rem;\n    display: block;\n    line-height: 2rem;\n    text-align: center;\n    color: white;\n    background-color: #3595e7;\n    font-size: 0.8rem;\n    border-width: 0;\n}\n\n.back-button {\n    display: block;\n    line-height: 1rem;\n    height: 1rem;\n    float: left;\n    font-size: 0.6rem;\n    margin: 0.5rem 0 0.5rem 0.5rem;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".live-like {\n    position: fixed;\n    width: 2.8rem;\n    height: 2.8rem;\n    text-align: center;\n    line-height: 2.8rem;\n    color: white;\n    background-color: #eee;\n    right: 0.5rem;\n    bottom: 1rem;\n    border-radius: 50%;\n    line-height: 2.4rem;\n}\n\n.live-like.on {\n    background-color: #3595e7;\n}\n\n.live-like i {\n    font-size: 2.4rem;\n}\n\n.live-like span {\n    position: absolute;\n    height: 0.8rem;\n    line-height: 0.8rem;\n    color: white;\n    background-color: #e30a20;\n    border-radius: 0.4rem;\n    top: -0.1rem;\n    right: 0;\n    font-size: 0.45rem;\n    min-width: 0.8rem;\n    padding: 0 0.1rem;\n}\n\n.live-pub {\n    position: fixed;\n    width: 2.8rem;\n    height: 2.8rem;\n    text-align: center;\n    line-height: 2.8rem;\n    color: white;\n    right: 0.5rem;\n    bottom: 1rem;\n    border-radius: 50%;\n    line-height: 2.4rem;\n    background-color: #3595e7;\n}\n\n.live-pub i {\n    font-size: 1.4rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".live-tab {\n    margin-top: 1rem;\n}\n\n.live-tab-button {\n    width: 16rem;\n    height: 1.6rem;\n    position: relative;\n}\n\n.live-tab-placeholder {\n    height: 1.6rem;\n}\n\n.live-tab-holder {\n    padding: 0 0.5rem;\n    font-size: 0;\n    text-align: center;\n    width: 16rem;\n    height: 1.6rem;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-color: white;\n    z-index: 10000;\n}\n\n.live-tab-holder.fixed {\n    position: fixed;\n    top: 0;\n    left: 50%;\n    margin-left: -8rem;\n}\n\n.live-tab-button a {\n    display: inline-block;\n    width: 7.5rem;\n    height: 1.6rem;\n    box-sizing: content-box;\n    border-bottom: 1px solid #e8e8e8;\n    line-height: 1.6rem;\n    font-size: 0.65rem;\n    color: #9fa6aa;\n}\n\n.live-tab-button i {\n    font-size: 0.65rem;\n}\n\n.live-tab-button a.current {\n    color: #3595e7;\n    border-bottom-color: #3595e7;\n}\n\n.live-stream {\n    width: 15rem;\n    margin: 0 auto;\n    border-left: 2px solid #dbdbdb;\n    padding-left: 0.5rem;\n    margin-bottom: 1.6rem;\n}\n\n.stream-date {\n    margin-bottom: 1.6rem;\n}\n\n.stream-date header {\n    height: 0.9rem;\n    line-height: 0.9rem;\n}\n\n.stream-date header h5 {\n    float: left;\n    padding: 0 0.3rem;\n    background-color: #eee;\n    font-size: 0.5rem;\n    color: #6c7275;\n}\n\n.stream-item-time {\n    line-height: 1.2rem;\n    font-size: 0.6rem;\n    font-weight: bold;\n    color: #3595e7;\n}\n\n.stream-item-publisher {\n    height: 1.2rem;\n    line-height: 1.2rem;\n    font-size: 0.5rem;\n    color: #939698;\n}\n\n.stream-item-publisher img {\n    width: 1.2rem;\n    height: 1.2rem;\n    border-radius: 50%;\n    border: 3px solid #e7e7e7;\n    display: inline-block;\n    vertical-align: top;\n}\n\n.stream-item-publisher i {\n    color: #3595e7;\n    font-style: normal;\n}\n\n.stream-item-text {\n    line-height: 0.9rem;\n    font-size: 0.6rem;\n    margin-top: 0.1rem;\n}\n\n.stream-item-photo {\n    margin-top: 0.4rem;\n    overflow: hidden;\n    width: 14.5rem;\n}\n\n.stream-item-photo img {\n    margin: 0 0.5rem 0.5rem 0;\n}\n\n.photo-type-1 {\n    width: 15rem;\n}\n\n.photo-type-1 img {\n    width: 14.5rem;\n}\n\n.stream-item-location {\n    line-height: 0.8rem;\n    color: #bababa;\n    font-size: 0.55rem;\n}\n\n.stream-item-location i {\n    font-size: 0.6rem;\n}\n\n.stream-item {\n    margin-bottom: 0.7rem;\n    position: relative;\n}\n\n.stream-item::before {\n    content: \"\";\n    position: absolute;\n    width: 0.3rem;\n    height: 0.3rem;\n    border-radius: 50%;\n    border: 0.1rem solid #3595e7;\n    background-color: white;\n    left: -0.77rem;\n    top: 0.35rem;\n}\n\n.photo-type-2 {\n    width: 15rem;\n}\n\n.photo-type-2 img {\n    float: left;\n    width: 7rem;\n    height: 5.25rem;\n    margin-right: 0.5rem;\n}\n\n.photo-type-3 {\n    width: 15rem;\n}\n\n.photo-type-3 img {\n    float: left;\n    width: 4.5rem;\n    height: 3.375rem;\n    margin: 0 0.5rem 0.5rem 0;\n}\n\n.stream-item-top {\n    width: 2rem;\n    height: 1.7rem;\n    background-image: url(http://i1.dd-img.com/assets/image/1494581560-1ef727ab4e347e8e-80w-68h.png);\n    background-size: cover;\n    background-repeat: no-repeat;\n    position: absolute;\n    top: 1.2rem;\n    right: 0;\n}\n\n.stream-item-alter {\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    height: 0.8rem;\n    line-height: 0.8rem;\n    color: #aaa;\n    text-align: right;\n}\n\n.stream-item-alter i {\n    font-size: 0.7rem;\n}\n\n.chat-room {\n    background-color: #e8e8e8;\n    padding: 0.5rem;\n    height: 10rem;\n    overflow: auto;\n}\n\n.chat-item-user {\n    height: 1.6rem;\n}\n\n.chat-item-avatar {\n    width: 1.6rem;\n    height: 1.6rem;\n    border-radius: 50%;\n}\n\n.chat-item-guest .chat-item-avatar {\n    float: left;\n    margin-right: 0.5rem;\n}\n\n.chat-item-owner .chat-item-avatar {\n    float: right;\n    margin-left: 0.5rem;\n}\n\n.chat-item-owner .chat-item-user {\n    text-align: right;\n}\n\n.chat-item-name {\n    height: 1.6rem;\n    display: inline-block;\n    vertical-align: top;\n    line-height: 1.6rem;\n    font-size: 0.55rem;\n    color: #595959;\n}\n\n.chat-item-text {\n    overflow: hidden;\n    margin-top: 0.5rem;\n}\n\n.chat-item-text p {\n    float: left;\n    font-size: 0.6rem;\n    line-height: 0.75rem;\n    padding: 0.3rem 0.5rem;\n    background-color: white;\n    border-radius: 3px;\n}\n\n.chat-item-owner .chat-item-text p {\n    float: right;\n    background-color: #3595e7;\n    color: white;\n}\n\n::-webkit-scrollbar {\n    width: 8px;\n    background-color: transparent;\n}\n\n::-webkit-scrollbar-thumb {\n    background-color: #a0a9af;\n    border-radius: 4px;\n}\n\n.chat-item {\n    margin-bottom: 0.7rem;\n}\n\n.chat-textarea {\n    width: 100%;\n    min-width: 16rem;\n    background-color: #fafafa;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    border-top: 1px solid #e2e2e2;\n}\n\n.chat-textarea .wrap {\n    padding: 0.5rem;\n}\n\n.chat-textarea textarea {\n    display: block;\n    width: 11.5rem;\n    height: 1.4rem;\n    display: block;\n    padding: 0.3rem 0.5rem;\n    background-color: white;\n    border: 1px solid #ccc;\n    border-radius: 2px;\n    float: left;\n}\n\n.chat-placeholder {\n    height: 4rem;\n}\n\n.chat-submit {\n    float: right;\n    height: 1.4rem;\n    line-height: 1.4rem;\n    text-align: center;\n    background-color: #3595e7;\n    color: white;\n    font-size: 0.6rem;\n    width: 3rem;\n}\n\n.live-loading {\n    color: #a9a9a9;\n    font-size: 0.6rem;\n    text-align: center;\n    line-height: 2.5rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 16 */
+/* 7 */
 /***/ (function(module, exports) {
 
 
