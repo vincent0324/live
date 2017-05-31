@@ -42,6 +42,24 @@ class Tab {
                 scrollTop: 0
             }, 400);
         });
+
+        $('#content').on('focus', function() {
+            $(this).addClass('open');
+        });
+
+        $('#content').on('blur', function() {
+            $(this).removeClass('open');
+        });
+
+        $('.live-like').on('click', function() {
+            var self = $(this);
+
+            self.find('i').addClass('niceIn');
+            
+            setTimeout(function() {
+                self.find('i').removeClass('niceIn');
+            }, 1000);
+        });
     }
 };
 

@@ -71,3 +71,28 @@ body {
     font-size: 0.6rem;
     margin: 0.5rem 0 0.5rem 0.5rem;
 }
+
+.upload {
+    width: 15rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.upload-item {
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    border: 1px dotted #ddd;
+    margin: 0.5rem;
+    background-color: white;
+}
+
+.cell {
+    padding: 0.5rem;
+}
+
+.cell img {
+    max-width: 3rem;
+    max-height: 3rem;
+}

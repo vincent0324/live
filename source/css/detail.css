@@ -1,8 +1,9 @@
 .live-title {
-    line-height: 1rem;
+    line-height: 1.2rem;
     padding: 0 0.5rem;
     font-size: 0.8rem;
     margin: 0.7rem 0;
+    font-weight: bold;
 }
 
 .live-detail {
@@ -37,6 +38,7 @@
     text-align: right;
     font-size: 0.6rem;
     color: #8f8f8f;
+    margin-left: 0.3rem;
 }
 
 .participant-number span {

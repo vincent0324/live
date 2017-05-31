@@ -36,9 +36,18 @@
 }
 
 .slogan {
-    width: 4.6rem;
+    float: left;
     height: 1.1rem;
     margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #506772;
+    border-left: 1px solid #dcdcdc;
+    padding-left: 0.5rem;
+}
+
+.slogan a {
+    color: #506772;
+    font-size: 0.75rem;
 }
 
 .slogan em {

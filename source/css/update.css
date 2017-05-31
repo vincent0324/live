@@ -12,6 +12,7 @@
     bottom: 6rem;
     right: 0;
     border-right-width: 0;
+    z-index: 999;
 }
 
 .update-button i {

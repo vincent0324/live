@@ -50,7 +50,7 @@
                 <header class="edit-item-header">
                     <h3>图片</h3>
                 </header>
-                <div class="edit-item-content">
+                <!-- <div class="edit-item-content">
                     <input type="file">
                     <input type="file">
                     <input type="file">
@@ -60,35 +60,146 @@
                     <input type="file">
                     <input type="file">
                     <input type="file">
+                </div> -->
+            </div>
+
+
+            <div class="upload">
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_1" class="headpicinput_1" id="headpicinput_1" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_1" class="imgUrl" name="imgUrl_1">
+                    <div id="" class="cell cell_1">
+                        <a href="javascript:void(0);" onclick="choosePic_1();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_1" class="preViewImg"></a>
+                    </div>
                 </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_2" class="headpicinput_2" id="headpicinput_2" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_2" class="imgUrl" name="imgUrl_2">
+                    <div id="" class="cell cell_2">
+                        <a href="javascript:void(0);" onclick="choosePic_2();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_2" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_3" class="headpicinput_3" id="headpicinput_3" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_3" class="imgUrl" name="imgUrl_3">
+                    <div id="" class="cell cell_3">
+                        <a href="javascript:void(0);" onclick="choosePic_3();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_3" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_4" class="headpicinput_4" id="headpicinput_4" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_4" class="imgUrl" name="imgUrl_4">
+                    <div id="" class="cell cell_4">
+                        <a href="javascript:void(0);" onclick="choosePic_4();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_4" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_5" class="headpicinput_5" id="headpicinput_5" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_5" class="imgUrl" name="imgUrl_5">
+                    <div id="" class="cell cell_5">
+                        <a href="javascript:void(0);" onclick="choosePic_5();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_5" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_6" class="headpicinput_6" id="headpicinput_6" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_6" class="imgUrl" name="imgUrl_6">
+                    <div id="" class="cell cell_6">
+                        <a href="javascript:void(0);" onclick="choosePic_6();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_6" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_7" class="headpicinput_7" id="headpicinput_7" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_7" class="imgUrl" name="imgUrl_7">
+                    <div id="" class="cell cell_7">
+                        <a href="javascript:void(0);" onclick="choosePic_7();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_7" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_8" class="headpicinput_8" id="headpicinput_8" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_8" class="imgUrl" name="imgUrl_8">
+                    <div id="" class="cell cell_8">
+                        <a href="javascript:void(0);" onclick="choosePic_8();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_8" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <input type="file" name="headpic_9" class="headpicinput_9" id="headpicinput_9" style="display: none;" onchange="UpLoad(this)">
+                    <input type="hidden" id="imgUrl_9" class="imgUrl" name="imgUrl_9">
+                    <div id="" class="cell cell_9">
+                        <a href="javascript:void(0);" onclick="choosePic_9();"><img src="http://i1.dd-img.com/assets/image/1495764543-95352fde674ead19-200w-200h.png" id="preViewImg_9" class="preViewImg"></a>
+                    </div>
+                </div>
+
+                <canvas id="canvas" style="display:none;"></canvas>
             </div>
-
-
-
-            <input type="file" name="headpic" id="headpicinput" style="display: none;" onchange="UpLoad(this)" />
-            <div id="" class="cell">
-                <a href="javascript:void(0);" onclick="choosePic();"><img src="../Images/1.jpg" style="width: 100%;" id="preViewImg" /></a>
-            </div>
-            <canvas id="canvas"></canvas>
-            <input type="hidden" id="imgUrl" />
-
 
             <script type="text/javascript">
-                function choosePic() {
-                    $('#headpicinput').click();
+                function choosePic_1() {
+                    $('.headpicinput_1').click();
+                };
+
+                function choosePic_2() {
+                    $('.headpicinput_2').click();
+                };
+
+                function choosePic_3() {
+                    $('.headpicinput_3').click();
+                };
+
+                function choosePic_4() {
+                    $('.headpicinput_4').click();
+                };
+
+                function choosePic_5() {
+                    $('.headpicinput_5').click();
+                };
+
+                function choosePic_6() {
+                    $('.headpicinput_6').click();
+                };
+
+                function choosePic_7() {
+                    $('.headpicinput_7').click();
+                };
+
+                function choosePic_8() {
+                    $('.headpicinput_8').click();
+                };
+
+                function choosePic_9() {
+                    $('.headpicinput_9').click();
                 };
 
                 function UpLoad(e) {
                     var f = e.files[0];
                     fileType = f.type;
+
+                    var parent = $(e).parents('.upload-item');
+
+                    var imgUrlInput = parent.find('.imgUrl');
+                    var preViewImg = parent.find('.preViewImg');
+                    var imgUrl = parent.find('.imgUrl');
+
                     if (/image\/\w+/.test(fileType)) {
                         var fileReader = new FileReader();
+
                         fileReader.readAsDataURL(f);
+
                         fileReader.onload = function(event) {
                             var result = event.target.result; //返回的dataURL
                             var image = new Image();
+
                             image.src = result;
                             //若图片大小大于1M，压缩后再上传，否则直接上传
+
                             if (f.size > 1024 * 1024) {
                                 image.onload = function() { //创建一个image对象，给canvas绘制使用
                                     var canvas = document.getElementById("canvas");
@@ -99,16 +210,27 @@
                                     var newImageData = canvas.toDataURL(fileType, 0.8); //重新生成图片
                                     sendData = newImageData.replace("data:" + fileType + ";base64,", '');
                                     dataLength = base64decode(sendData).length; //base64位图片长度（这里没有写这个方法）
-                                    $("#imgUrl").val(sendData);
-                                    $("#preViewImg").attr("src", newImageData);
+
+                                    // var imgUrlInput = $(e).next('.imgUrl');
+                                    // var preViewImg = $(e).next('.preViewImg');
+
+                                    // console.log(imgUrlInput);
+
+                                    // $("#imgUrl").val(sendData);
+                                    imgUrlInput.val(sendData);
+                                    // $("#preViewImg").attr("src", newImageData);
+                                    preViewImg.attr('src', newImageData);
                                     $("#canvas").hide();
                                 }
                             } else {
                                 image.onload = function() { //创建一个image对象，给canvas绘制使用
                                     sendData = result.replace("data:" + fileType + ";base64,", '');
                                     dataLength = base64decode(sendData).length;
-                                    $("#preViewImg").attr("src", result);
-                                    $("#imgUrl").val(sendData);
+                                    // $("#preViewImg").attr("src", result);
+                                    // $("#imgUrl").val(sendData);
+
+                                    preViewImg.attr('src', result);
+                                    imgUrl.val(sendData);
                                 }
                             }
                         }
@@ -270,12 +392,6 @@
                     }
                     return out;
                 }
-                //demo
-                //function doit(){
-                //    var f = document.f;
-                //    f.output.value = base64encode(utf16to8(f.source.value));
-                //    f.decode.value = utf8to16(base64decode(f.output.value));
-                //}
             </script>
 
             <div class="edit-item edit-item-submit">
@@ -285,8 +401,7 @@
         </form>
     </div>
 
-    <!-- <script src="../build/edit.debug.js"></script> -->
-    <script src="http://assets.diandong.com/mobile/live/build/edit.debug.js"></script>
+    <script src="../build/edit.debug.js"></script>
 
 </body>
 

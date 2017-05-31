@@ -13,10 +13,10 @@ class Display {
 
     bindEvent() {
         let context = this;
-        let displaySwiper;
+        var displaySwiper;
 
-        $(document).on('click', '.photo-single img', function() {
-            var url = $(this).data('url');
+        $(document).on('click', '.photo-single', function() {
+            var url = $(this).find('img').data('url');
 
             $('.display-single .wrap').html('<img src="' + url + '">');
             $('.display-single').fadeIn();
@@ -36,7 +36,7 @@ class Display {
             for (let i = 0; i < imagesLength; i++) {
                 let url = images.eq(i).data('url') || '';
 
-                swiperHtml += '<div class="display-slide"><img src="' + url + '"></div>';
+                swiperHtml += '<div class="display-slide"><div class="display-inner"><img src="' + url + '"></div></div>';
             }
 
             $('.display-wrapper').html(swiperHtml);
@@ -56,16 +56,18 @@ class Display {
                 onTouchEnd: function(swiper) {
                     $('.display-pages-current').html(displaySwiper.activeIndex + 1);
                 }
-            })
+            });
+
+            displaySwiper.reInit();
 
         });
 
         $(document).on('click', '.display', function() {
-            $('.display').fadeOut();
+            $('.display').hide();
             $('.display-wrapper').html('');
             $('.display-pages-sum').html('');
             $('.display-pages-current').html('');
-            displaySwiper.destroy(false); //移除自动播放和键盘控制，保留屏幕尺寸变化事件
+            displaySwiper.destroy(true);
         });
     }
 };
